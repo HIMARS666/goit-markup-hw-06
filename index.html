@@ -213,22 +213,22 @@
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-group"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-group"></use></svg></a>
             </li>
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-company"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-company"></use></svg></a>
             </li>
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-company2"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-company2"></use></svg></a>
             </li>
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-foster-peters"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-foster-peters"></use></svg></a>
             </li>
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-brand"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-brand"></use></svg></a>
             </li>
             <li class="clients-item">
-              <a class="clients-link" href="#"><svg width="93" height="43"><use class="clients-icon" href="./images/icons/sprite.svg#icon-company3"></use></svg></a>
+              <a class="clients-link" href="#"><svg class="clients-icon" width="93" height="43"><use href="./images/icons/sprite.svg#icon-company3"></use></svg></a>
             </li>
           </ul>
         </div>
@@ -260,7 +260,33 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button"></button>
+        <form class="modal-form">
+          <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="form-title" for="user-name">Имя</label>
+          <span class="form-side">
+            <svg class="icon-person" width="12" height="12"><use href="./images/icons/sprite.svg#icon-personblack"></use></svg>
+            <input class="form-input" type="text" name="user-name" id="user-name" required>
+          </span>
+          
+          <label class="form-title" for="phone-number">Телефон</label>
+          <span class="form-side">
+          <svg class="icon-phone" width="13" height="13"><use href="./images/icons/sprite.svg#icon-phoneblack"></use></svg>
+          <input class="form-input" type="tel" name="phone-number" id="phone-number" required>
+        </span>
+
+          <label class="form-title" for="mail">Почта</label>
+          <span class="form-side">
+            <svg class="icon-email" width="15" height="13"><use href="./images/icons/sprite.svg#icon-emailblack"></use></svg>
+            <input class="form-input" type="email" name="mail" id="mail" required>
+          </span>
+          
+          <label class="form-title" for="comment">Комментарий</label>
+          <textarea class="comment-input" placeholder="Введите текст" name="user-comment" id="comment"></textarea>
+          <input class="form-checkbox visually-hidden" type="checkbox" name="user-agree" id="checkbox" required>
+          <label class="policy" for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-conditions">Условия договора</a></label>
+          <button class="form-button" type="submit">Отправить</button>
+          <button data-modal-close type="button"></button>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
